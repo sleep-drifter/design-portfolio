@@ -1,0 +1,47 @@
+.remodal-wrapper{
+	background: rgba(0,0,0,0.5);
+    &.remodal-is-opened{
+    	display: flex !important;
+    }
+    align-items: center;
+    justify-content: center;
+}
+
+
+.remodal.booking{
+	background: #fff;
+	max-width: 400px;
+	padding: 24px;
+	height: auto;
+	border-radius: 4px;
+	// box-shadow: 
+}
+
+.partners-list{
+	list-style: none;
+	padding: 0;
+	text-indent: 0;
+	li{
+		margin: 6px 0;
+		
+
+		&:last-child{
+			border: 0;
+		}
+		a{
+			padding: 16px 0;
+			border-radius: 4px;
+			//background: red;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&.a{ background: #FF5A5F; img{height: 50px;}}
+			&.b{ background: #2465bc; img{height: 50px;}}
+			&.c{ background: #fff2cb; }
+
+		}
+	}
+	img{
+		height: 60px;
+	}
+}
