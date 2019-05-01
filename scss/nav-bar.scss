@@ -1,8 +1,9 @@
 header{
   position: fixed;
+
   top: 0;
   left: 0;
-  background: #fff;
+  @include set-background($nav-bg)
   width: 100%;
   height: 80px;
   display: flex;
@@ -13,9 +14,11 @@ header{
   transition: background 0.2s, transform 0.2s;
   transform: scale(1);
   padding: 16px 0px 24px 0 ;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 0;
+  //display: none;
   article{
-    max-width: $left-col-width;
+    //max-width: $left-col-width;
+    max-width: 900px;
     .flexer{
       width: 100%;
       display: flex;
@@ -40,7 +43,7 @@ header{
   //   }
   // }
   &.anchored{
-    border-bottom: 1px solid #fff;
+    border-bottom: 0;
   }
   .header-inner{
     height: 100%;
@@ -52,6 +55,7 @@ header{
     
   }
   a.logo-link{
+    display: none !important;
     font-size: 2.8rem;
     //font-family: 'presicav';
     -webkit-font-smoothing: antialiased;
@@ -134,16 +138,18 @@ header{
 
 // list in nav
 nav{
-  @include set-display($desktop-menu-display);
+  
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include set-display($desktop-menu-display);
   // .menu-main-navigation-container{
   //   //width: $left-col-width;
   //   height: 100%;
   // }
+  display: none !important;
 }
 // #nav_main{
 //   height: 100%;
@@ -189,10 +195,15 @@ nav{
   // mobile menu
 #mobile-menu{
   @include set-display($mobile-menu-display);
-  border: 1px solid $dark-color;
-  border-radius: 4px;
-  color: $dark-color;
-  padding: 6px 10px;
+      font-size: 1.8rem;
+    position: relative;
+    top: -2px;
+    font-family: 'rhode';
+    text-transform: uppercase;
+  //border: 1px solid $dark-color;
+  //border-radius: 4px;
+  //color: $dark-color;
+  //padding: 6px 10px;
 }
 
 

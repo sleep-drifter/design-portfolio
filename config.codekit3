@@ -29,6 +29,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/img/team.png": {
+		"ft": 32768,
+		"iS": 164699,
+		"oA": 0,
+		"oAP": "/img/team.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -67,6 +78,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/lottie/melol-old.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/lottie/melol-old-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/lottie/melol.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -75,10 +94,34 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/lottie/ph.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/lottie/ph-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/lottie/twirl-old.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/lottie/twirl-old-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/lottie/twirl.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/lottie/twirl-min.json",
+		"oAP": "/lottie/twirl-w120-h120-w120-h120-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/lottie/van.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/lottie/van-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1

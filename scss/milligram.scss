@@ -19,7 +19,7 @@ html {
 
 body {
   color: $dark-color;
-  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  //font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 1.6em;
   font-weight: 300;
   //letter-spacing: .01em;
@@ -441,12 +441,12 @@ input[type='radio'] {
 }
 
 a, a:visited {
-  color: #ff9800;
+  color: #2196f3;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #bd7100;
+  color: #257dc3 !important;
 }
 
 dl,
@@ -532,10 +532,13 @@ strong {
   font-weight: bold;
 }
 
-p {
+p,li {
+  @include set-typography($p-font-sizes);
+  font-family: 'stratos';
   margin-top: 0;
-  font-size: 2rem;
-  font-weight: 200;
+  //line-height: 8rem;
+  //font-size: 2.2rem;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 

@@ -40,7 +40,7 @@ flkty = $('.flickity-slideshow').data('flickity')
 // lottie
 var animation1 = bodymovin.loadAnimation({
   container: document.getElementById('lottie-1'), // Required
-  path: 'lottie/twirl.json', // Required
+  path: 'lottie/melol.json', // Required
   renderer: 'svg', // Required
   loop: true, // Optional
   autoplay: true, // Optional
@@ -58,7 +58,16 @@ var animation2 = bodymovin.loadAnimation({
 
 var animation3 = bodymovin.loadAnimation({
   container: document.getElementById('lottie-3'), // Required
-  path: 'lottie/melol.json', // Required
+  path: 'lottie/van.json', // Required
+  renderer: 'svg', // Required
+  loop: true, // Optional
+  autoplay: true, // Optional
+  //name: "Hello World", // Name for future reference. Optional.
+})
+
+var animation3 = bodymovin.loadAnimation({
+  container: document.getElementById('lottie-4'), // Required
+  path: 'lottie/twirl.json', // Required
   renderer: 'svg', // Required
   loop: true, // Optional
   autoplay: true, // Optional
@@ -72,16 +81,16 @@ animation3.setSpeed(1.25)
 
 }); // end of ready
 
-$(window).on('scroll', function(){
-  var scrollTop = $(this).scrollTop();
-  //console.log(scrollTop);
+// $(window).on('scroll', function(){
+//   var scrollTop = $(this).scrollTop();
+//   //console.log(scrollTop);
 
-  nav.toggleClass('anchored', scrollTop < 300);
-  if(scroller.length === 1){
-  	scroller.toggleClass('hidden', scrollTop > 300);
-  }
+//   nav.toggleClass('anchored', scrollTop < 300);
+//   if(scroller.length === 1){
+//   	scroller.toggleClass('hidden', scrollTop > 300);
+//   }
   
-  // prev = scrollTop;
-});
+//   // prev = scrollTop;
+// });
 
 

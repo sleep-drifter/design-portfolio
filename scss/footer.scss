@@ -40,14 +40,16 @@ footer{
   }
 }
 
-footer .content-container-base{
-  margin: 0 auto;
-  padding: 0;
-  border:0;
-}
+// footer .content-container-base{
+//   margin: 0 auto;
+//   //padding: 0 16px;
+//   border:0;
+// }
 
 footer .simple-content-block{
+  
   margin: 0;
   padding: 0;
   border:0;
+  max-width: 100%;
 }

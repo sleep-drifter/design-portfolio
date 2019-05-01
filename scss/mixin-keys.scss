@@ -1,7 +1,7 @@
 // keys
 $breakpoints: (
   six:      350px,
-  tween:    480px, 
+  tween:    580px, 
   tablet:   768px, 
   laptop:   1024px,
   desktop:  1400px,
@@ -9,13 +9,20 @@ $breakpoints: (
 
 
 // // font-size, font-family, font-weight
-// $hero-primary-sizes: (
-//   null:   (30px, normal, 500, $font-soft),
-//   tween :   (40px, normal, 500, $font-soft),
-//   tablet:   (50px, normal, 500, $font-soft),
-//   laptop:   (60px, normal, 500, $font-soft),
-//   desktop:  (70px, normal, 500, $font-soft)
-// );
+$p-font-sizes: (
+  null :   (2rem),
+  tween:  (2.3rem)
+);
+
+$p-hero-font-sizes: (
+  null :   (2.2rem),
+  tween:  (2.8rem)
+);
+
+$nav-bg: (
+  null :   (white),
+  tween:  (none)
+);
 
 // $hero-secondary-sizes: (
 //   null:   (20px, 16px, 300, $font-reg),
@@ -221,6 +228,18 @@ $breakpoints: (
 // // ••••••••••••••••••••••••••••••
 
 // // jobs posting
+
+$content-block-padding:(
+  null:   (0 0 88px 0, 0),
+  tween:   (88px 0 88px 0, 0),
+);
+
+
+$animation-padding:(
+  null:   (0,20px 0 0 0),
+  tween:   (0, 120px 0 0 0),
+);
+
 
 $slide-content-padding:(
   null:   (0 16px, 20px 16px),
@@ -767,6 +786,8 @@ $mobile-menu-display: (
 );
 
 
+
+
 // // pmt
 
 // $dl-menu-mobile-display: (
@@ -867,7 +888,15 @@ $mobile-menu-display: (
 // // SET WIDTH & HEIGHT
 // // ••••••••••••••••••••••••••••••
 // // ••••••••••••••••••••••••••••••
+$animation-container-size:(
+  null:   (240px, 240px),
+  tween:   (320px, 320px),
+);
 
+$animation-container-size:(
+  null:   (240px, 240px),
+  tween:   (320px, 320px),
+);
 
 $slide-profile-size:(
   null:   (144px 144px),
@@ -1047,6 +1076,10 @@ $rocks-bg: (
 // // ••••••••••••••••••••••••••••••
 // // ••••••••••••••••••••••••••••••
 // // flex-direction  align-items  justify-content  
+$row-flex:(
+  null:   (column, center),
+  tween:    (row, flex-start)
+);
 
 $di-flex:(
   null:   (column, center),
@@ -1144,6 +1177,11 @@ $image-top: (
 //   null:   (3),
 //   tablet:   (1)
 // );
+
+$animation-order-flex:(
+  null:   (-1),
+  tween:   (3)
+);
 
 // $text-block-flex-order: (
 //   null:   (2),

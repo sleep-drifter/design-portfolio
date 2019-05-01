@@ -3,7 +3,7 @@
 }
 
 $text-blue: #447DB6;
-$container-max-width: 920px;
+$container-max-width: 960px;
 $left-col-width: 540px;
 $dark-color: #2C2D35;
 $light-color: #E6EBF0;
@@ -19,10 +19,11 @@ a{
 html{scroll-behavior: smooth;}
 
 
-@import 'milligram';
+
 
 @import 'mixin-keys';
 @import 'mixin-rules';
+@import 'milligram';
 @import 'typography';
 @import 'components';
 @import 'nav-bar';
@@ -35,7 +36,18 @@ html{scroll-behavior: smooth;}
 @import 'pop-up';
 
 body{
-	font-family: 'stratos';	
+	font-family: 'titling-gothic-fb';	
+	//font-family: 'niveau-grotesk';
+	font-family: 'rhode';
+
+
+
+	//font-family: 'questa-sans';
+	//font-family: 'ivystyle-sans';
+	//font-family: 'abadi';
+
+	
+
 	margin:0;
 	color: $dark-color;
 	//margin-top: 80px; // past nav-bar
