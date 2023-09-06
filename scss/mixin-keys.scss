@@ -1078,7 +1078,7 @@ $rocks-bg: (
 // // flex-direction  align-items  justify-content  
 $row-flex:(
   null:   (column, center),
-  tween:    (row, flex-start)
+  tween:    (row, stretch)
 );
 
 $di-flex:(

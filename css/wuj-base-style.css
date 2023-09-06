@@ -97,21 +97,21 @@ input[type='submit'][disabled]:hover {
 
 .button.button-outline,
 button.button-outline,
-input[type='button'].button-outline,
-input[type='reset'].button-outline,
-input[type='submit'].button-outline {
+input.button-outline[type='button'],
+input.button-outline[type='reset'],
+input.button-outline[type='submit'] {
   background-color: transparent;
   color: #9b4dca; }
 
 .button.button-outline:focus, .button.button-outline:hover,
 button.button-outline:focus,
 button.button-outline:hover,
-input[type='button'].button-outline:focus,
-input[type='button'].button-outline:hover,
-input[type='reset'].button-outline:focus,
-input[type='reset'].button-outline:hover,
-input[type='submit'].button-outline:focus,
-input[type='submit'].button-outline:hover {
+input.button-outline[type='button']:focus,
+input.button-outline[type='button']:hover,
+input.button-outline[type='reset']:focus,
+input.button-outline[type='reset']:hover,
+input.button-outline[type='submit']:focus,
+input.button-outline[type='submit']:hover {
   background-color: transparent;
   border-color: #606c76;
   color: #606c76; }
@@ -119,20 +119,20 @@ input[type='submit'].button-outline:hover {
 .button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
 button.button-outline[disabled]:focus,
 button.button-outline[disabled]:hover,
-input[type='button'].button-outline[disabled]:focus,
-input[type='button'].button-outline[disabled]:hover,
-input[type='reset'].button-outline[disabled]:focus,
-input[type='reset'].button-outline[disabled]:hover,
-input[type='submit'].button-outline[disabled]:focus,
-input[type='submit'].button-outline[disabled]:hover {
+input.button-outline[type='button'][disabled]:focus,
+input.button-outline[type='button'][disabled]:hover,
+input.button-outline[type='reset'][disabled]:focus,
+input.button-outline[type='reset'][disabled]:hover,
+input.button-outline[type='submit'][disabled]:focus,
+input.button-outline[type='submit'][disabled]:hover {
   border-color: inherit;
   color: #9b4dca; }
 
 .button.button-clear,
 button.button-clear,
-input[type='button'].button-clear,
-input[type='reset'].button-clear,
-input[type='submit'].button-clear {
+input.button-clear[type='button'],
+input.button-clear[type='reset'],
+input.button-clear[type='submit'] {
   background-color: transparent;
   border-color: transparent;
   color: #9b4dca; }
@@ -140,12 +140,12 @@ input[type='submit'].button-clear {
 .button.button-clear:focus, .button.button-clear:hover,
 button.button-clear:focus,
 button.button-clear:hover,
-input[type='button'].button-clear:focus,
-input[type='button'].button-clear:hover,
-input[type='reset'].button-clear:focus,
-input[type='reset'].button-clear:hover,
-input[type='submit'].button-clear:focus,
-input[type='submit'].button-clear:hover {
+input.button-clear[type='button']:focus,
+input.button-clear[type='button']:hover,
+input.button-clear[type='reset']:focus,
+input.button-clear[type='reset']:hover,
+input.button-clear[type='submit']:focus,
+input.button-clear[type='submit']:hover {
   background-color: transparent;
   border-color: transparent;
   color: #606c76; }
@@ -153,12 +153,12 @@ input[type='submit'].button-clear:hover {
 .button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
 button.button-clear[disabled]:focus,
 button.button-clear[disabled]:hover,
-input[type='button'].button-clear[disabled]:focus,
-input[type='button'].button-clear[disabled]:hover,
-input[type='reset'].button-clear[disabled]:focus,
-input[type='reset'].button-clear[disabled]:hover,
-input[type='submit'].button-clear[disabled]:focus,
-input[type='submit'].button-clear[disabled]:hover {
+input.button-clear[type='button'][disabled]:focus,
+input.button-clear[type='button'][disabled]:hover,
+input.button-clear[type='reset'][disabled]:focus,
+input.button-clear[type='reset'][disabled]:hover,
+input.button-clear[type='submit'][disabled]:focus,
+input.button-clear[type='submit'][disabled]:hover {
   color: #9b4dca; }
 
 code {
@@ -383,8 +383,7 @@ input[type='radio'] {
     padding: 0 1.0rem; } }
 
 a, a:visited {
-  color: #2196f3;
-  text-decoration: none; }
+  color: #2196f3; }
 
 a:focus, a:hover {
   color: #257dc3 !important; }
@@ -469,7 +468,6 @@ p, li {
   @media screen and (min-width: 580px) {
     p, li {
       font-size: 2.3rem; } }
-
 h1,
 h2,
 h3,
@@ -551,7 +549,7 @@ img {
     color: #fff; }
   .rounded-button.fatty, input.fatty.ninja-forms-field[type="button"] {
     padding: 0 40px; }
-  .rounded-button:hover, input.ninja-forms-field:hover[type="button"] {
+  .rounded-button:hover, input.ninja-forms-field[type="button"]:hover {
     transform: scale(1.1);
     background: #222b3a; }
 
@@ -563,14 +561,14 @@ img {
 
 .spread-row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   flex-direction: column;
   align-items: center; }
   @media screen and (min-width: 580px) {
     .spread-row {
       flex-direction: row;
-      align-items: flex-start; } }
+      align-items: stretch; } }
   .spread-row .lottie-container {
     padding: 0;
     margin: 20px 0 0 0; }
@@ -578,7 +576,6 @@ img {
       .spread-row .lottie-container {
         padding: 0;
         margin: 120px 0 0 0; } }
-
 @-webkit-keyframes bounceAround {
   0% {
     top: 0; }
@@ -621,13 +618,12 @@ img {
       padding: 88px 0 88px 0;
       margin: 0; } }
   .simple-content-block ul {
-    list-style: none; }
+    list-style: disc; }
   .simple-content-block.hero p {
     font-size: 2.2rem; }
     @media screen and (min-width: 580px) {
       .simple-content-block.hero p {
         font-size: 2.8rem; } }
-
 .photo-content {
   display: flex;
   flex-direction: row;
@@ -658,6 +654,12 @@ img {
       background: #ddd; }
   .centered-cta p {
     opacity: 0.6; }
+
+h6 {
+  font-family: 'stratos';
+  padding-bottom: 0;
+  margin-bottom: 8px;
+  font-size: 2.3rem; }
 
 .centered-list {
   text-align: center;
@@ -1004,7 +1006,6 @@ img {
     .lottie-container {
       width: 320px;
       height: 320px; } }
-
 #resume a {
   margin: 24px 0;
   font-size: 2rem; }
@@ -1023,14 +1024,30 @@ img {
 #resume h5 {
   margin-bottom: 8px; }
 
+.bullets {
+  list-style: circle; }
+
+a.rubber-ball {
+  color: #f38821; }
+  a.rubber-ball:hover {
+    color: #a55409 !important;
+    text-decoration: underline; }
+
 .resume-position {
   margin: 36px 0; }
 
 .right-col {
-  order: -1; }
+  order: -1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px; }
   @media screen and (min-width: 580px) {
     .right-col {
       order: 3; } }
+  .right-col img {
+    max-width: 320px;
+    border-radius: 24px;
+    margin: 0px 24px; }
 
 .hidden-email {
   display: none; }
@@ -1240,7 +1257,6 @@ nav {
   @media screen and (min-width: 580px) {
     nav {
       display: flex; } }
-
 ul#nav_main {
   height: 100%;
   display: flex;
@@ -1282,7 +1298,6 @@ ul#nav_main {
   @media screen and (min-width: 580px) {
     #mobile-menu {
       display: none; } }
-
 footer {
   width: 100%;
   background: whitesmoke;
@@ -1363,7 +1378,6 @@ footer .simple-content-block {
     .slide-content {
       padding: 0px;
       margin: 20px auto; } }
-
 .flickity-viewport {
   transition: height 0.15s; }
 

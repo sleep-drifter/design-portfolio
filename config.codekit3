@@ -29,6 +29,17 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/img/penny.jpg": {
+		"ft": 16384,
+		"iS": 1937671,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/penny.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/team.png": {
 		"ft": 32768,
 		"iS": 164699,
@@ -125,6 +136,14 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/scratch.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/scratch.html",
+		"oF": 0
 		},
 	"/scss/components.scss": {
 		"aP": 0,
