@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/CNAME",
+		"oF": 0
+		},
 	"/css/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -28,6 +36,28 @@
 		"oAP": "/css/wuj-base-style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/img/jump-2.png": {
+		"ft": 32768,
+		"iS": 1559782,
+		"oA": 0,
+		"oAP": "/img/jump-2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/jump.png": {
+		"ft": 32768,
+		"iS": 416851,
+		"oA": 0,
+		"oAP": "/img/jump.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/penny.jpg": {
 		"ft": 16384,

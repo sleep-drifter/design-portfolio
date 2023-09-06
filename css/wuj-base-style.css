@@ -569,13 +569,6 @@ img {
     .spread-row {
       flex-direction: row;
       align-items: stretch; } }
-  .spread-row .lottie-container {
-    padding: 0;
-    margin: 20px 0 0 0; }
-    @media screen and (min-width: 580px) {
-      .spread-row .lottie-container {
-        padding: 0;
-        margin: 120px 0 0 0; } }
 @-webkit-keyframes bounceAround {
   0% {
     top: 0; }
