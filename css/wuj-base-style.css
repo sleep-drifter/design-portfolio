@@ -553,6 +553,13 @@ img {
     transform: scale(1.1);
     background: #222b3a; }
 
+.quotes {
+  font-weight: 600; }
+  .quotes.beg {
+    margin-right: 3px; }
+  .quotes.end {
+    margin-left: 3px; }
+
 .content-container-base {
   max-width: 960px;
   padding: 80px 16px;

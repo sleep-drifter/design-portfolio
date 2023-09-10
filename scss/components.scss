@@ -41,6 +41,13 @@ $heightRatio: calc(100vw * 0.5625);
 	}
 }
 
+.quotes{
+	font-weight: 600;
+	&.beg{margin-right: 3px;}
+	&.end{margin-left: 3px;}
+}
+	
+
 .content-container-base{
 	max-width: $container-max-width;
 	padding: 80px 16px;
