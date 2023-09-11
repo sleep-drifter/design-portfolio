@@ -37,6 +37,14 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/favicon.ico",
+		"oF": 0
+		},
 	"/img/jump-2.png": {
 		"ft": 32768,
 		"iS": 1559782,
@@ -70,6 +78,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/scoot_app.jpg": {
+		"ft": 16384,
+		"iS": 179951,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/scoot_app.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/story-capture.png": {
+		"ft": 32768,
+		"iS": 487788,
+		"oA": 0,
+		"oAP": "/img/story-capture.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/team.png": {
 		"ft": 32768,
 		"iS": 164699,
@@ -79,6 +109,25 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/img/unnamed.gif": {
+		"ft": 4194304,
+		"iS": 3835408,
+		"oA": 0,
+		"oAP": "/img/unnamed.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/img/unnamed.jpg": {
+		"ft": 16384,
+		"iS": 336395,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/unnamed.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/index.html": {

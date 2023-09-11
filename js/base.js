@@ -1,3 +1,50 @@
+//last IG post
+// tests here: https://reqbin.com/
+
+var token = 'IGQWRQQ3VranVoTDJlREFjQUI2Wk9nWnFJVXFUOC1oNExMTmxiWlhORi1yS0N3MkpJNVMwWFJKX05Iel9oWnMtWFl6azBBOS1vSXhWczhCMWt2bDRLQ0x4QTI5aTVUal85M0NyaUExOGRuQQZDZD';
+var igBase = 'https://graph.instagram.com/v17.0/me?fields=media&access_token='+token;
+
+var mediaCount = 0;
+var createIGPost = function (igObj) {
+  console.log(igObj);
+  var thumbnail;
+  if(igObj.media_type != 'VIDEO'){
+    thumbnail = igObj.media_url;
+  } else {
+    thumbnail = igObj.thumbnail_url;
+  }
+  
+  
+  //$('#theDiv').prepend('<img src="'+thumbnail+'" />')
+  
+}
+var runMedia = function (mediaIDs) {
+  console.log(mediaIDs)
+  var mediaArray = mediaIDs.media.data;
+
+  for (var i = mediaArray.length - 1; i >= 0; i--) {
+    
+    if(i < 3 ){
+      var igURL = 'https://graph.instagram.com/' + mediaArray[i].id + '?fields=media_type,media_url,permalink,thumbnail_url,timestamp&access_token='+token;
+      fetch(igURL)
+        .then(response => response.json())
+        .then(json => createIGPost(json))
+
+      //console.log(mediaCount)    
+      
+      //medias.push(mediaArray[i])
+      //createIGPost(mediaArray[i].id)
+    }
+  }
+  //console.log(medias)
+}
+//fetch code
+var fetcher = fetch(igBase)
+   .then(response => response.json())
+   .then(json => runMedia(json))
+  
+// output: {"success":"true"}
+
 //var $ = jQuery.noConflict();
 /*jshint devel:true */
 var prev;
@@ -77,20 +124,15 @@ var animation3 = bodymovin.loadAnimation({
 animation1.setSpeed(1.25)
 animation2.setSpeed(1.25)
 animation3.setSpeed(1.25)
-  
+
+
+
+
+// console.log(latestIGPosts)
+// console.log('wow')
+// fetch(igURL)
+//    .then(response => response.json())
+//    .then(json => console.log(JSON.stringify(json)))
+
 
 }); // end of ready
-
-// $(window).on('scroll', function(){
-//   var scrollTop = $(this).scrollTop();
-//   //console.log(scrollTop);
-
-//   nav.toggleClass('anchored', scrollTop < 300);
-//   if(scroller.length === 1){
-//   	scroller.toggleClass('hidden', scrollTop > 300);
-//   }
-  
-//   // prev = scrollTop;
-// });
-
-
