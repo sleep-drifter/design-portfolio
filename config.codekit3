@@ -45,6 +45,14 @@
 		"oAP": "/favicon.ico",
 		"oF": 0
 		},
+	"/img/1TTjc0f0EgeexwpGLYzhWf5ElttNKidPXQmt9wjY5DZg.gif": {
+		"ft": 4194304,
+		"iS": 17101609,
+		"oA": 0,
+		"oAP": "/img/1TTjc0f0EgeexwpGLYzhWf5ElttNKidPXQmt9wjY5DZg.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"/img/jump-2.png": {
 		"ft": 32768,
 		"iS": 1559782,
@@ -61,6 +69,17 @@
 		"iS": 416851,
 		"oA": 0,
 		"oAP": "/img/jump.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/old-scoot-app.png": {
+		"ft": 32768,
+		"iS": 115146,
+		"oA": 0,
+		"oAP": "/img/old-scoot-app.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
