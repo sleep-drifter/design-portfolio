@@ -18,6 +18,7 @@ var createIGPost = function (igObj) {
   //$('#theDiv').prepend('<img src="'+thumbnail+'" />')
   
 }
+
 // var runMedia = function (mediaIDs) {
 //   console.log(mediaIDs)
 //   var mediaArray = mediaIDs.media.data;
@@ -53,8 +54,38 @@ var nav;
 var scroller;
 jQuery( document ).ready( function() {
     prev = 0;
-    nav = $('header');
-    scroller = $('.arrow-container');
+    // nav = $('header');
+    // scroller = $('.arrow-container');
+    var trap = $('.trap');
+    var tipOption = $('.tip-options > span');
+    var error = $('.error-message');
+    var thanks = $('.thank-you');
+
+    tipOption.click(function(){
+      if($(this).hasClass('active')){
+
+      } else {
+        tipOption.removeClass('active')
+        $(this).addClass('active')
+        thanks.addClass('hidden');
+      }
+      trap.addClass('active');
+    });
+    trap.click(function(){
+      if($(this).hasClass('active')){
+        thanks.removeClass('hidden');
+        console.log('asdasdasd')
+        thanks.removeClass('hidden');
+        thanks.text('Thank you. Your choice has been judged.');
+        thanks.css('color', '#000');
+        $('nav h1:not(.thank-you), nav h2, nav div' ).css('opacity',0.25)
+        $('nav').delay( 2500 ).fadeOut( 250 );
+      } else {
+        thanks.text('Please choose a tip option first...');
+        thanks.removeClass('hidden');
+        thanks.css('color', 'red');
+      } 
+    });
 
 
 
