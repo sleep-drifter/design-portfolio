@@ -193,7 +193,8 @@ header{
   nav{
     position: fixed;
     height: 100%;
-    display: flex;
+    //display: flex;
+    display: none;
     width: 100%;
     //background: hsla(255,255,255,0.9);
     background: hsla(0,0,0,0.85);
